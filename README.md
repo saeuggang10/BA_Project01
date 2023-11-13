@@ -2,50 +2,44 @@
 외래 관광객의 국내 방문 사유와 재방문율 분석
 
 ## 📅 일정
-총기간 : 2023. 08. 22 ~ 2023. 08. 28
+총기간 : 2023. 06. 08 ~ 2023. 06. 19
 
 <br>
 
 ## 📌 목표
 
 1. 데이터 분석
-2. 모델링
-3. 서비스 구상
 
 <br>
 
 ## 📖 상세 내용
 
-- 교통량 데이터와 졸음쉼터 위치 데이터를 합쳐 졸음쉼터 이용률 현황 분석
-- 고속도로 노션별 졸음쉼터 분포 분석
-- 졸음쉼터의 편의시설 현황 분석
-- 고속도로 노선별 터널길이 상위 30개 분포와 졸음쉼터 분포 현황
-- 사고다발지역과 졸음쉼터의 효용성 분석
-- 졸음쉼터 설치 및 관리규정 부적합 요소 도출
-- 서비스 계획
-    - 졸음운전자의 상태를 알 수 있는 바이털지수 분류모델
-    - 눈 깜빡임 감지 딥러닝 모델을 만들어 서비스 계획
-    - 졸음이 인지되면 근처의 졸음쉼터로 안내해주는 서비스를 제작하고자 함
+- 입국객 특성 변수를 활용해 입국 추이, 방문 목적, 만족도 분석
+- 특정 변수별로 입국객 소비 패턴을 분석해 높은 소비율을 보이는 특성 분석
+- 재방문객의 특성을 분석해 어떤 사람이 재방문을 할지 RFM분석
+- 우리나라 관광사업의 SWOT
+- 설문조사 데이터의 한계점
 
 <br>
 
 ## 🐰 역할
 
-- 휴게소 정보 데이터 수집
-- 졸음쉼터 정보 데이터 수집
-- Open API 데이터 수집
-- 지도 시각화
-- 지도에서 졸음쉼터 주변의 인사이트 도출
-- 모델 선정 및 해석
+- 팀장
+- 일정 관리 및 기획
+- 전처리 의사결정
+- 데이터 가공 의사결정
+- 재방문시 소비패턴 시각화 및 인사이트 도출
+- 코드 개발 컨설팅
+- 발표
 
 <br>
 
 ## 🛠️ Stack
 |분야|사용 기술|
 |------|---|
-|Data Preprocessing|<img src="https://img.shields.io/badge/numpy-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/pnadas-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/BeautifulSoup-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/herversine-색상?style=for-the-badge&logoColor=white">|
-|Plot|<img src="https://img.shields.io/badge/matplotlib-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/plotly-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/folium-색상?style=for-the-badge&logoColor=white">|
-|Model|<img src="https://img.shields.io/badge/RandomForest-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/SGD-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/KNN-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/Extra Trees-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/Gradient Boosting-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/HistGradient Boosting-색상?style=for-the-badge&logoColor=white">|
+|Data Preprocessing|<img src="https://img.shields.io/badge/numpy-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/pnadas-색상?style=for-the-badge&logoColor=white">|
+|Plot|<img src="https://img.shields.io/badge/matplotlib-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/seaborn-색상?style=for-the-badge&logoColor=white">|
+|Analysis|<img src="https://img.shields.io/badge/RFM-색상?style=for-the-badge&logoColor=white">|
 |MS|<img src="https://img.shields.io/badge/Excel-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/PPT-색상?style=for-the-badge&logoColor=white">|
 |Share|<img src="https://img.shields.io/badge/Google Drive-색상?style=for-the-badge&logoColor=white"> <img src="https://img.shields.io/badge/Notion-색상?style=for-the-badge&logoColor=white">|
 
@@ -91,5 +85,4 @@
 
 ## ✨ 한계점
 
-- 전시 상황을 대비한 비상활주로 등 군 시설물이 주변에 위치하여 공개적으로 고속 국도 데이터를 제공받을 수 없음
-- Open API 담당 엔지니어의 출장으로 30개의 고속도로 중 2개의 고속도로 위험 지수 데이터만 사용하여 분석
+- 설문데이터임으로 “허위응답”이 존재하기마련이고, 분석결과의 신뢰도를 떨어트릴 수 있어 공신력 있는 자료(뉴스, 논문 등) 내용 / 데이터 분석 내용 / 데이터 값을 비교해가며 결론을 내려야 했다.
